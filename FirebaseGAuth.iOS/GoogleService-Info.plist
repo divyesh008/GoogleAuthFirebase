@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>31148871439-fsngvnu6k04358l9qguhs9fhk1tn501l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.31148871439-fsngvnu6k04358l9qguhs9fhk1tn501l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDS4W0giYj3TuEOLrrmXD_vDbA3WADez4E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>31148871439</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dev.firebaseauth</string>
+	<key>PROJECT_ID</key>
+	<string>gauth-22042</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gauth-22042.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:31148871439:ios:c46038349712b22505b87a</string>
+	<key>DATABASE_URL</key>
+	<string>https://gauth-22042.firebaseio.com</string>
+</dict>
+</plist>

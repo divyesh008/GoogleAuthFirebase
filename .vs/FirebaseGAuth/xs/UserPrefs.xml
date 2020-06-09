@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{88721C15-49EF-41D4-8C8F-A4C6431227EB}|Default">
+  <MonoDevelop.Ide.ItemProperties.FirebaseGAuth.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.70CF84AC-08C4-4D13-9AEB-9855C20FEC28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirebaseGAuth.iOS/Info.plist">
+    <Files>
+      <File FileName="FirebaseGAuth.iOS/Entitlements.plist" />
+      <File FileName="FirebaseGAuth.iOS/Info.plist" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FirebaseGAuth" expanded="True">
+            <Node name="FirebaseGAuth.iOS" expanded="True">
+              <Node name="Configuration" expanded="True" />
+              <Node name="Info.plist" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

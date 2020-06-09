@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcher_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-og-A8Q">
+                                <rect key="frame" x="0.0" y="313.5" width="414" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firebase + Google Auth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmh-FR-4pF">
+                                <rect key="frame" x="77" y="273.5" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ajX-og-A8Q" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="9Rw-gj-oqV"/>
+                            <constraint firstAttribute="trailing" secondItem="ajX-og-A8Q" secondAttribute="trailing" id="9YL-nF-Snp"/>
+                            <constraint firstItem="ajX-og-A8Q" firstAttribute="top" secondItem="Jmh-FR-4pF" secondAttribute="bottom" constant="10" id="FSv-98-oYR"/>
+                            <constraint firstItem="ajX-og-A8Q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OkJ-zn-txg"/>
+                            <constraint firstItem="ajX-og-A8Q" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jCA-Vf-c53"/>
+                            <constraint firstItem="ajX-og-A8Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="o20-AO-2Xv"/>
+                            <constraint firstItem="Jmh-FR-4pF" firstAttribute="centerX" secondItem="ajX-og-A8Q" secondAttribute="centerX" id="oVa-7h-XYb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173909999999999" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launcher_bg" width="300" height="153"/>
+    </resources>
+</document>
