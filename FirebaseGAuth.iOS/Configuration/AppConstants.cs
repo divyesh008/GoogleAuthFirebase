@@ -6,12 +6,12 @@ namespace FirebaseGAuth.iOS.Configuration
         /// <summary>
         /// Google api key.
         /// </summary>
-        public const string GoogleApiKey = "<Your Firebase Project API Key>";
+        public const string GoogleApiKey = "AIzaSyCcVwhx42IykyBNqFVxJh0gA9LdsM_Koco";
 
         /// <summary>
         /// Google Client Id.
         /// </summary>
-        public const string GoogleClientId = "<Your Google Project ClientId>";
+        public const string GoogleClientId = "31148871439-fsngvnu6k04358l9qguhs9fhk1tn501l.apps.googleusercontent.com";
 
         /// <summary>
         /// User Profile Access Scope. Can read this details after login.
@@ -21,7 +21,7 @@ namespace FirebaseGAuth.iOS.Configuration
         /// <summary>
         /// Google Redirect Url. After login process redirect back to app.
         /// </summary>
-        public const string GoogleRedirectUrl = "<Your Google Project iOS URL scheme>:/oauth2redirect";
+        public const string GoogleRedirectUrl = "com.googleusercontent.apps.31148871439-fsngvnu6k04358l9qguhs9fhk1tn501l:/oauth2redirect";
 
         /// <summary>
         /// Google Authorization Url.

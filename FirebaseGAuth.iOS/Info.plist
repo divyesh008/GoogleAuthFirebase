@@ -54,9 +54,7 @@
 			<string>Viewer</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Reverse</string>
-				<string>Client</string>
-				<string>Url</string>
+				<string>com.googleusercontent.apps.31148871439-fsngvnu6k04358l9qguhs9fhk1tn501l</string>
 			</array>
 		</dict>
 	</array>
