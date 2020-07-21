@@ -69,7 +69,7 @@ namespace FirebaseGAuth.iOS
             }
             else
             {
-                if (authResult != null && authResult.User != null) ;
+                if (authResult != null && authResult.User != null) 
                 {
                     var user = new Model.User();
                     user.Uid = authResult.User.Uid;
