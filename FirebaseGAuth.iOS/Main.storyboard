@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="213">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Title-->
@@ -139,13 +141,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466.66669999999999" y="-4.6875"/>
+            <point key="canvasLocation" x="466.6667" y="-4.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="212">
             <objects>
                 <navigationController navigationBarHidden="YES" id="213" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="215">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -172,14 +175,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Z1-zE-QDX">
-                                <rect key="frame" x="132" y="124" width="150" height="150"/>
+                                <rect key="frame" x="132" y="100" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5Z1-zE-QDX" secondAttribute="height" multiplier="1:1" id="FZP-bo-Pkf"/>
                                     <constraint firstAttribute="width" constant="150" id="cEK-LD-j8h"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66c-fP-SgH">
-                                <rect key="frame" x="146.5" y="289" width="121" height="22"/>
+                                <rect key="frame" x="146.5" y="265" width="121" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="yrw-ka-SV4"/>
                                 </constraints>
@@ -188,7 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pu-zb-FqC">
-                                <rect key="frame" x="145.5" y="321" width="123" height="22"/>
+                                <rect key="frame" x="145.5" y="297" width="123" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="wYC-DJ-eEn"/>
                                 </constraints>
@@ -239,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="522" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.7249999999999" y="-4.0178570000000002"/>
+            <point key="canvasLocation" x="1150.725" y="-4.017857"/>
         </scene>
     </scenes>
     <resources>

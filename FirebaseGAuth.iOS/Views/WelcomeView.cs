@@ -6,6 +6,7 @@ using FirebaseGAuth.iOS.Helpers;
 using FirebaseGAuth.iOS.Services;
 using Foundation;
 using UIKit;
+using WebKit;
 using Xamarin.Auth;
 
 namespace FirebaseGAuth.iOS
@@ -24,6 +25,32 @@ namespace FirebaseGAuth.iOS
             UITapGestureRecognizer gestureRecognizer = new UITapGestureRecognizer(GoogleLogin);
             gestureRecognizer.NumberOfTapsRequired = 1;
             vwGoogleLogin.AddGestureRecognizer(gestureRecognizer);
+
+            UITapGestureRecognizer tapPhoneLogin = new UITapGestureRecognizer(PhoneNumberLogin);
+            gestureRecognizer.NumberOfTapsRequired = 1;
+            vwPhoneLogin.AddGestureRecognizer(tapPhoneLogin);
+        }
+
+        private void PhoneNumberLogin()
+        {
+            string javaScript = @"var meta = document.createElement('meta');
+                                   meta.setAttribute('name', 'viewport');
+                                   meta.setAttribute('content', 'width=device-width');
+                                   document.getElementsByTagName('head')[0].appendChild(meta);";
+
+            WKUserScript wkUScript = new WKUserScript((NSString)javaScript, WKUserScriptInjectionTime.AtDocumentEnd, true);
+            WKUserContentController wkUController = new WKUserContentController();
+            wkUController.AddUserScript(wkUScript);
+
+            WKWebViewConfiguration wkWebConfig = new WKWebViewConfiguration();
+            wkWebConfig.UserContentController = wkUController;
+            WKWebView webView = new WKWebView(View.Frame, wkWebConfig);
+            View.AddSubview(webView);
+            webView.AllowsBackForwardNavigationGestures = true;
+
+            var url = new NSUrl("http://34.216.71.66/Plaid/Plaid");
+            var request = new NSUrlRequest(url);
+            webView.LoadRequest(request);
         }
 
         private void GoogleLogin()
