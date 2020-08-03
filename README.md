@@ -74,3 +74,7 @@ PresentViewController(view, true, null);
 Also when you’re handling both Completed and Error events from the authenticator, you will need to manually call DismissViewController because the SFSafariViewController doesn’t dismiss itself.
 
 If you forgot to DismissViewController control will not come back to your application after login process done
+
+
+# Fix 403 error while push code 
+https://www.a2hosting.in/kb/developer-corner/version-control-systems1/403-forbidden-error-message-when-you-try-to-push-to-a-github-repository
