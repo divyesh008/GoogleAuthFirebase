@@ -8,6 +8,7 @@ namespace FirebaseGAuth.iOS.Services
     public class OAuthenticationService
     {
         private static OAuth2Authenticator oAuth2Authenticator;
+        public static OAuth2Authenticator AuthenticationState { get; private set; }
 
         public static OAuth2Authenticator CreateOAuth2(OAuth2ProviderType socialLoginType)
         {
@@ -30,10 +31,6 @@ namespace FirebaseGAuth.iOS.Services
             return oAuth2Authenticator;
         }
 
-
-        public OAuth2Authenticator GetAuthenticator()        {            return oAuth2Authenticator;        }
-
-        public static OAuth2Authenticator AuthenticationState { get; private set; }
-
+        //public OAuth2Authenticator GetAuthenticator()        //{        //    return oAuth2Authenticator;        //}
     }
 }

@@ -8,6 +8,7 @@ using Foundation;
 using UIKit;
 using WebKit;
 using Xamarin.Auth;
+using Xamarin.Auth.Presenters;
 
 namespace FirebaseGAuth.iOS
 {
@@ -58,8 +59,16 @@ namespace FirebaseGAuth.iOS
             oAuth2 = OAuthenticationService.CreateOAuth2(OAuth2ProviderType.GOOGLE);
             oAuth2.Completed += OAuth2_Completed;
             oAuth2.Error += OAuth2_Error;
-            var view = oAuth2.GetUI();
-            PresentViewController(view, true, null);
+
+            //Change: 03 Aug, 2020
+            //var view = oAuth2.GetUI();
+            //PresentViewController(view, true, null);
+
+            // This is workaround for iOS because when open presenter on iOS, 
+            // view is not correctly shown. Then is necessary  modify view on 
+            // iOS LoginPageRenderer renderer. On Android, view is correctly shown.
+            var presenter = new OAuthLoginPresenter();
+            presenter.Login(oAuth2);
         }
 
         private void OAuth2_Error(object sender, AuthenticatorErrorEventArgs e)

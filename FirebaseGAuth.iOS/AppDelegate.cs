@@ -1,4 +1,5 @@
 ﻿using System;
+using Firebase.Auth;
 using FirebaseGAuth.iOS.Services;
 using Foundation;
 using UIKit;
@@ -17,15 +18,29 @@ namespace FirebaseGAuth.iOS
         {
             //Configure firebase 
             Firebase.Core.App.Configure();
+
+            //Presenting the Google SignIn User Interface
+            //If not Initialize presenter will give null reference exception.
+            global::Xamarin.Auth.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
             return true;
         }
 
         public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
         {
+            // load redirectUrl Page for parsing
             Uri uri = new Uri(url.AbsoluteString);
-            OAuthenticationService.AuthenticationState.OnPageLoading(uri);
+            if (OAuthenticationService.AuthenticationState != null)
+            {
+                OAuthenticationService.AuthenticationState.OnPageLoading(uri);
+            }
+            else
+            {
+                Auth.DefaultInstance.CanHandleUrl(uri);
+            }
+            
             return true;
         }
+
     }
 }
 
